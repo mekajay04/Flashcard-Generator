@@ -10,27 +10,25 @@ function BasicCard(front,back) {
 }
 
 
-var firstPresident = new BasicCard ( "Who is the first president of the United States?", "George Washington")
+var firstPresident = new BasicCard ( "Who was the first president of the United States?", "George Washington");
 
-"Who was the first president of the United States?"
+
 console.log(firstPresident.front);
 
-"George Washington"
+
 console.log(firstPresident.back); 
 
-if(name !== "" && typeof name !== "undefined"){
+
 var firstPresidentCloze = new ClozeCard(
-    "George Washington was the first president of the United States.", "George Washington", name);
+    "George Washington was the first president of the United States.",  " ... was the first president of the United States.");
 
 // "George Washington"
-console.log(firstPresidentCloze.cloze); 
+console.log(firstPresidentCloze.text); 
 
 // " ... was the first president of the United States.
-console.log(firstPresidentCloze.partial); 
+console.log(firstPresidentCloze.cloze); 
 
-// "George Washington was the first president of the United States.
-console.log(firstPresidentCloze.fullText);
 
-}
+
 
 module.exports = BasicCard;
